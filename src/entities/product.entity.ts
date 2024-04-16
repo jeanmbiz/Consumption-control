@@ -24,7 +24,7 @@ class Product {
   id: string;
 
   @Column({ length: 100 })
-  @IsString({ message: "name deve ser uma string" })
+  @IsString({ message: "name deve ser uma string, testando" })
   @IsNotEmpty()
   @Length(1, 100, { message: "o nome deve ter entre 1 e 100 caracteres" })
   name: string;
